@@ -15,6 +15,7 @@ public class Game : MonoBehaviour
         // Create main camera
         var cameraGo = new GameObject();
         cameraGo.transform.Rotate(new Vector3(90, 0, 0));
+		cameraGo.transform.position = new Vector3(0,20,0);
         var camera = cameraGo.AddComponent<CameraController>();
 
         // Create planet
